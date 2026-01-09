@@ -1,18 +1,50 @@
-# 📑 Reporteador de Novedades - Braskem Idesa System
+# 📊 Reporteador Digital C4 - Braskem Idesa
 
-Este repositorio presenta el **Ecosistema Digital de Reporteo** diseñado para la supervisión de seguridad privada. El sistema integra tecnologías de backend para la captura, procesamiento y análisis de incidentes operativos.
+Este repositorio presenta un ecosistema integral de captura y análisis de datos diseñado para la **Terminal Química Puerto México (Braskem Idesa)**. El sistema transforma el reporte manual de novedades en un proceso automatizado con inteligencia aplicada y dashboards de control ejecutivo.
 
-## 🚀 Funcionalidades Core
-* **IA Text Enhancement:** Uso de la API de Gemini para la corrección gramatical y técnica de reportes.
-* **Automatización PDF:** Generación dinámica de reportes bajo estándar corporativo usando FPDF.
-* **Dashboard C4 (V2):** Visualización analítica de incidentes basada en PHP y Chart.js.
-* **Gestión de Sesiones:** Control de acceso restringido para personal administrativo del C4.
+<p align="center">
+  <img src="https://pixmedia.b-cdn.net/pixmedialogoblanco.png" width="208" height="33" alt="Pixmedia Agency">
+</p>
 
-## 🏗️ Arquitectura del Sistema
-El sistema completo reside en un entorno de producción seguro y utiliza:
-1. **Frontend:** PHP/Tailwind CSS con persistencia de borradores mediante LocalStorage.
-2. **Backend:** PHP 8.x con integración de librerías `fpdf` y `PHPMailer`.
-3. **Database:** MySQL para el almacenamiento estructurado de folios y logs.
+## 1. 🖼️ Evidencia del Sistema en Producción
+
+Para garantizar la integridad del código fuente corporativo, se presentan las interfaces funcionales:
+
+| **Interfaz de Captura** | **Dashboard de Inteligencia** | **Entregable PDF** |
+|:---:|:---:|:---:|
+| <img src="http://imgfz.com/i/OxbfPJ3.png" width="250"> | <img src="http://imgfz.com/i/RzEUfec.png" width="250"> | <img src="http://imgfz.com/i/LtpKVbF.png" width="250"> |
+| Formulario con corrección de IA para supervisores. | Panel de control para monitoristas y KPIs. | Reporte generado y enviado por SMTP. |
 
 ---
-⚠️ **Nota de Seguridad:** Por razones de confidencialidad y protección de datos, el código fuente que contiene credenciales críticas (API Keys, SMTP Passwords y DB Strings) se mantiene en un entorno privado. Este repositorio sirve únicamente como vitrina de arquitectura y despliegue estático.
+
+## 2. 🚀 Características Técnicas Principales
+
+* **Optimización de Textos con IA:** Integración de una capa de procesamiento de lenguaje natural (IA) para la refinación de novedades operativas en tiempo real.
+* **Generador de Reportes Automático:** Motor de backend basado en PHP que procesa los datos para generar documentos PDF estandarizados con foliado de seguridad.
+* **Dashboard C4 Interactivo:** Panel centralizado que permite a los monitoristas filtrar, buscar y visualizar tendencias de incidentes mediante gráficas dinámicas.
+* **Gestión de Sesiones Seguras:** Control de acceso mediante login administrativo para restringir la visualización de datos sensibles.
+
+---
+
+## 3. 🛠️ Arquitectura y Tecnologías
+
+* **Backend:** PHP 8.x para la lógica de procesamiento y ruteo.
+* **Frontend:** HTML5, Tailwind CSS y JavaScript con persistencia en LocalStorage.
+* **Librerías:** FPDF para la construcción de documentos y PHPMailer para la mensajería SMTP.
+* **IA:** Conexión vía Proxy a modelos de lenguaje avanzados para análisis de texto.
+
+---
+
+## 4. 🔒 Nota de Seguridad y Confidencialidad
+
+Como Director de Tecnologías, se ha priorizado la seguridad de la infraestructura:
+* El código fuente que contiene credenciales SMTP, API Keys y cadenas de conexión a base de datos se mantiene en un entorno privado.
+* Este repositorio sirve como vitrina arquitectónica y despliegue de interfaz estática a través de GitHub Pages.
+
+---
+
+## 👨‍💻 Sobre el Desarrollador
+**William Velázquez Valenzuela**
+* **Cargo:** Director de Tecnologías | Administrador de Sistemas
+* **Agencia:** Pixmedia Agency
+* **Ubicación:** Coatzacoalcos, Veracruz, México.
