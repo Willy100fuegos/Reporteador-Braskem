@@ -62,14 +62,6 @@ Debes editar los siguientes archivos con tus propias credenciales para que el si
 
 ---
 
-## 🔒 Nota de Seguridad
-
-Como Director de Tecnologías, se ha priorizado la integridad de la infraestructura:
-* El código fuente público no contiene credenciales reales (SMTP, API Keys, DB Strings).
-* Este repositorio sirve como vitrina arquitectónica y recurso educativo para la comunidad Open Source.
-
----
-
 ## 👨‍💻 Sobre el Desarrollador
 **William Velázquez Valenzuela**
 * **Cargo:** Director de Tecnologías | Administrador de Sistemas
