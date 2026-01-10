@@ -1,50 +1,63 @@
-# 📊 Reporteador Digital C4 - Braskem Idesa
+# Reporteador ECC - AI Powered Reporting System 🤖
 
-Este repositorio presenta un ecosistema integral de captura y análisis de datos diseñado para la **Terminal Química Puerto México (Braskem Idesa)**. El sistema transforma el reporte manual de novedades en un proceso automatizado con inteligencia aplicada y dashboards de control ejecutivo.
-
-<p align="center">
-  <img src="https://pixmedia.b-cdn.net/pixmedialogoblanco.png" width="208" height="33" alt="Pixmedia Agency">
-</p>
-
-## 1. 🖼️ Evidencia del Sistema en Producción
-
-Para garantizar la integridad del código fuente corporativo, se presentan las interfaces funcionales:
-
-| **Interfaz de Captura** | **Dashboard de Inteligencia** | **Entregable PDF** |
-|:---:|:---:|:---:|
-| <img src="http://imgfz.com/i/OxbfPJ3.png" width="250"> | <img src="http://imgfz.com/i/RzEUfec.png" width="250"> | <img src="http://imgfz.com/i/LtpKVbF.png" width="250"> |
-| Formulario con corrección de IA para supervisores. | Panel de control para monitoristas y KPIs. | Reporte generado y enviado por SMTP. |
+> **Sistema de Generación de Informes de Seguridad Asistido por Inteligencia Artificial.**
+> *Automatización de redacción, generación de evidencia PDF y distribución vía SMTP para entornos corporativos.*
 
 ---
 
-## 2. 🚀 Características Técnicas Principales
+## 🎯 ¿Qué es y qué resuelve?
 
-* **Optimización de Textos con IA:** Integración de una capa de procesamiento de lenguaje natural (IA) para la refinación de novedades operativas en tiempo real.
-* **Generador de Reportes Automático:** Motor de backend basado en PHP que procesa los datos para generar documentos PDF estandarizados con foliado de seguridad.
-* **Dashboard C4 Interactivo:** Panel centralizado que permite a los monitoristas filtrar, buscar y visualizar tendencias de incidentes mediante gráficas dinámicas.
-* **Gestión de Sesiones Seguras:** Control de acceso mediante login administrativo para restringir la visualización de datos sensibles.
+En la operación de seguridad privada, los supervisores pierden horas redactando informes de incidencias ("Novedades"), a menudo con errores de ortografía o falta de coherencia.
 
----
+**Reporteador ECC** soluciona esto integrando la API de **Google Gemini Pro**. El oficial simplemente ingresa palabras clave o una descripción coloquial de los hechos, y la IA reescribe el texto con un tono formal, ejecutivo y técnico, listo para ser presentado al cliente.
 
-## 3. 🛠️ Arquitectura y Tecnologías
-
-* **Backend:** PHP 8.x para la lógica de procesamiento y ruteo.
-* **Frontend:** HTML5, Tailwind CSS y JavaScript con persistencia en LocalStorage.
-* **Librerías:** FPDF para la construcción de documentos y PHPMailer para la mensajería SMTP.
-* **IA:** Conexión vía Proxy a modelos de lenguaje avanzados para análisis de texto.
+**Capacidades Clave:**
+* ✨ **Reescritura con IA:** Transforma "el guardia se durmió" en "Se detectó al elemento en postura no alerta durante su ronda...".
+* 📄 **Generación PDF:** Crea documentos legales con encabezados, fechas y evidencia fotográfica incrustada (FPDF).
+* 📧 **Distribución Automática:** Envía el reporte final a la lista de distribución de interesados vía SMTP.
 
 ---
 
-## 4. 🔒 Nota de Seguridad y Confidencialidad
+## 📸 Flujo de Trabajo (Screenshots)
 
-Como Director de Tecnologías, se ha priorizado la seguridad de la infraestructura:
-* El código fuente que contiene credenciales SMTP, API Keys y cadenas de conexión a base de datos se mantiene en un entorno privado.
-* Este repositorio sirve como vitrina arquitectónica y despliegue de interfaz estática a través de GitHub Pages.
+### 1. Panel de Captura Inteligente
+Interfaz limpia donde el monitorista carga los datos básicos y la evidencia.
+![Dashboard Principal](PON_AQUI_URL_DE_TU_DASHBOARD)
+
+### 2. Procesamiento de IA
+El sistema consulta a la API de Gemini para estructurar la narrativa del incidente antes de generar el documento.
+![Procesamiento](PON_AQUI_URL_DE_OTRA_VISTA_SI_TIENES)
+
+### 3. Output Final (PDF)
+El resultado es un archivo PDF estandarizado que se envía automáticamente por correo.
+![PDF Generado](PON_AQUI_URL_DEL_PDF_O_CORREO)
 
 ---
 
-## 👨‍💻 Sobre el Desarrollador
-**William Velázquez Valenzuela**
-* **Cargo:** Director de Tecnologías | Administrador de Sistemas
-* **Agencia:** Pixmedia Agency
-* **Ubicación:** Coatzacoalcos, Veracruz, México.
+## 🛠️ Stack Tecnológico
+
+* **Backend:** PHP 8.0+ (Nativo)
+* **Frontend:** HTML5, CSS3, JavaScript (Vanilla)
+* **AI Engine:** Google Gemini Pro API
+* **Base de Datos:** MySQL
+* **Librerías:** FPDF (PDF) y PHPMailer (SMTP)
+
+---
+
+## 👨‍💻 Guía de Despliegue para Desarrolladores
+
+Si deseas implementar o probar este sistema en tu propio servidor local o hosting, sigue estos pasos.
+
+### ⚠️ Notas Importantes (Archivos no incluidos)
+Por razones de seguridad y optimización, este repositorio **NO** incluye:
+1.  La carpeta `libs/` (Debes descargar FPDF y PHPMailer manualmente).
+2.  La carpeta `uploads/` (Debes crearla manualmente).
+3.  Credenciales reales (Debes configurar tus propias llaves).
+
+### 🚀 Pasos de Instalación
+
+#### 1. Clonar y Estructurar
+Descarga el repositorio y crea las carpetas faltantes en la raíz de tu proyecto:
+```bash
+mkdir uploads
+mkdir libs
