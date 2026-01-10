@@ -1,63 +1,77 @@
-# Reporteador ECC - AI Powered Reporting System 🤖
+# 📊 Reporteador Digital C4 - Braskem Idesa (AI Powered)
 
 > **Sistema de Generación de Informes de Seguridad Asistido por Inteligencia Artificial.**
-> *Automatización de redacción, generación de evidencia PDF y distribución vía SMTP para entornos corporativos.*
+> *Transformación digital del reporte manual de novedades hacia un proceso automatizado con inteligencia aplicada y dashboards de control ejecutivo.*
+
+<p align="center">
+  <img src="https://pixmedia.b-cdn.net/pixmedialogoblanco.png" width="208" height="33" alt="Pixmedia Agency">
+</p>
 
 ---
 
-## 🎯 ¿Qué es y qué resuelve?
+## 1. 🖼️ Evidencia del Sistema (Showcase)
 
-En la operación de seguridad privada, los supervisores pierden horas redactando informes de incidencias ("Novedades"), a menudo con errores de ortografía o falta de coherencia.
+Este ecosistema integra interfaces de captura inteligente, tableros de control y generación de entregables legales.
 
-**Reporteador ECC** soluciona esto integrando la API de **Google Gemini Pro**. El oficial simplemente ingresa palabras clave o una descripción coloquial de los hechos, y la IA reescribe el texto con un tono formal, ejecutivo y técnico, listo para ser presentado al cliente.
-
-**Capacidades Clave:**
-* ✨ **Reescritura con IA:** Transforma "el guardia se durmió" en "Se detectó al elemento en postura no alerta durante su ronda...".
-* 📄 **Generación PDF:** Crea documentos legales con encabezados, fechas y evidencia fotográfica incrustada (FPDF).
-* 📧 **Distribución Automática:** Envía el reporte final a la lista de distribución de interesados vía SMTP.
+| **Interfaz de Captura (AI)** | **Dashboard de Inteligencia** | **Entregable PDF** |
+|:---:|:---:|:---:|
+| <img src="http://imgfz.com/i/OxbfPJ3.png" width="300"> | <img src="http://imgfz.com/i/RzEUfec.png" width="300"> | <img src="http://imgfz.com/i/LtpKVbF.png" width="300"> |
+| *Formulario con motor de IA para corrección de redacción.* | *Panel de control para análisis de KPIs.* | *Reporte generado y enviado por SMTP.* |
 
 ---
 
-## 📸 Flujo de Trabajo (Screenshots)
+## 2. 🚀 Características Técnicas Principales
 
-### 1. Panel de Captura Inteligente
-Interfaz limpia donde el monitorista carga los datos básicos y la evidencia.
-![Dashboard Principal](PON_AQUI_URL_DE_TU_DASHBOARD)
-
-### 2. Procesamiento de IA
-El sistema consulta a la API de Gemini para estructurar la narrativa del incidente antes de generar el documento.
-![Procesamiento](PON_AQUI_URL_DE_OTRA_VISTA_SI_TIENES)
-
-### 3. Output Final (PDF)
-El resultado es un archivo PDF estandarizado que se envía automáticamente por correo.
-![PDF Generado](PON_AQUI_URL_DEL_PDF_O_CORREO)
+* **Optimización de Textos con IA:** Integración de la API de **Google Gemini Pro** para la refinación gramatical y técnica de novedades operativas en tiempo real.
+* **Generador de Reportes Automático:** Motor de backend basado en PHP que procesa los datos para generar documentos PDF estandarizados con foliado de seguridad.
+* **Dashboard C4 Interactivo:** Panel centralizado que permite a los monitoristas filtrar, buscar y visualizar tendencias de incidentes mediante gráficas dinámicas (Chart.js).
+* **Gestión de Sesiones Seguras:** Control de acceso mediante login administrativo para restringir la visualización de datos sensibles.
 
 ---
 
-## 🛠️ Stack Tecnológico
+## 3. 🛠️ Arquitectura Tecnológica
 
-* **Backend:** PHP 8.0+ (Nativo)
-* **Frontend:** HTML5, CSS3, JavaScript (Vanilla)
-* **AI Engine:** Google Gemini Pro API
-* **Base de Datos:** MySQL
-* **Librerías:** FPDF (PDF) y PHPMailer (SMTP)
+El sistema reside en una arquitectura LAMP optimizada:
+
+* **Backend:** PHP 8.x (Nativo) para lógica de negocio y procesamiento.
+* **Frontend:** HTML5, Tailwind CSS y JavaScript (Fetch API) con persistencia de borradores en LocalStorage.
+* **Database:** MySQL para el almacenamiento estructurado de folios y logs.
+* **Librerías:** `FPDF` para renderizado de documentos y `PHPMailer` para distribución SMTP.
+* **AI Core:** Proxy intermedio para comunicación segura con LLMs.
 
 ---
 
-## 👨‍💻 Guía de Despliegue para Desarrolladores
+## 4. 👨‍💻 Guía de Despliegue para Desarrolladores
 
-Si deseas implementar o probar este sistema en tu propio servidor local o hosting, sigue estos pasos.
+Si eres desarrollador y deseas probar o contribuir a este proyecto, ten en cuenta que el código ha sido **sanitizado** por seguridad.
 
-### ⚠️ Notas Importantes (Archivos no incluidos)
-Por razones de seguridad y optimización, este repositorio **NO** incluye:
-1.  La carpeta `libs/` (Debes descargar FPDF y PHPMailer manualmente).
-2.  La carpeta `uploads/` (Debes crearla manualmente).
-3.  Credenciales reales (Debes configurar tus propias llaves).
+### ⚠️ Requisitos Previos (Archivos Excluidos)
+Para mantener el repositorio ligero y seguro, **NO** se incluyen las siguientes carpetas. Debes crearlas manualmente:
 
-### 🚀 Pasos de Instalación
+1.  **Carpeta `uploads/`**: Crea esta carpeta en la raíz para que se guarden las imágenes de evidencia y los PDFs generados.
+2.  **Carpeta `libs/`**: Debes descargar las dependencias y colocarlas aquí:
+    * [Descargar FPDF](http://www.fpdf.org/) -> Descomprimir en `libs/fpdf/`
+    * [Descargar PHPMailer](https://github.com/PHPMailer/PHPMailer) -> Descomprimir en `libs/phpmailer/`
 
-#### 1. Clonar y Estructurar
-Descarga el repositorio y crea las carpetas faltantes en la raíz de tu proyecto:
-```bash
-mkdir uploads
-mkdir libs
+### ⚙️ Configuración de Entorno
+Debes editar los siguientes archivos con tus propias credenciales para que el sistema funcione:
+
+* **`config.php`**: Ingresa tus credenciales de MySQL (`DB_HOST`, `DB_USER`, `DB_PASS`).
+* **`ia_proxy.php`**: Reemplaza `TU_API_KEY_DE_GEMINI` con tu propia llave de Google AI Studio.
+* **`procesar.php`**: Configura las credenciales de tu servidor SMTP para el envío de correos.
+
+---
+
+## 🔒 Nota de Seguridad
+
+Como Director de Tecnologías, se ha priorizado la integridad de la infraestructura:
+* El código fuente público no contiene credenciales reales (SMTP, API Keys, DB Strings).
+* Este repositorio sirve como vitrina arquitectónica y recurso educativo para la comunidad Open Source.
+
+---
+
+## 👨‍💻 Sobre el Desarrollador
+**William Velázquez Valenzuela**
+* **Cargo:** Director de Tecnologías | Administrador de Sistemas
+* **Ubicación:** Coatzacoalcos, Veracruz
+* **Agencia:** Pixmedia Agency
